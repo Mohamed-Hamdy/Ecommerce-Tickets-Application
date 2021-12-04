@@ -9,7 +9,7 @@ using eTickets.Data;
 namespace etickets_app.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20211129123807_Initial")]
+    [Migration("20211130181427_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,13 +26,13 @@ namespace etickets_app.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Bio")
-                        .HasColumnType("text");
+                        .HasColumnType("text(2000)");
 
                     b.Property<string>("FullName")
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(150)");
 
                     b.Property<string>("ProfilepictureURL")
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(500)");
 
                     b.HasKey("Id");
 
@@ -61,13 +61,13 @@ namespace etickets_app.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Discription")
-                        .HasColumnType("text");
+                        .HasColumnType("text(1000)");
 
                     b.Property<string>("Logo")
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(500)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(150)");
 
                     b.HasKey("Id");
 
@@ -84,19 +84,19 @@ namespace etickets_app.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Discription")
-                        .HasColumnType("text");
+                        .HasColumnType("text(1000)");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime");
 
                     b.Property<string>("ImageURL")
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<int>("MovieCategory")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(150)");
 
                     b.Property<double>("Price")
                         .HasColumnType("double");
@@ -123,13 +123,13 @@ namespace etickets_app.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Bio")
-                        .HasColumnType("text");
+                        .HasColumnType("text(2000)");
 
                     b.Property<string>("FullName")
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(150)");
 
                     b.Property<string>("ProfilepictureURL")
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(500)");
 
                     b.HasKey("Id");
 
