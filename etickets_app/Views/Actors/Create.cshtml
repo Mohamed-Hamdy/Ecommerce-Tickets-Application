@@ -17,7 +17,7 @@
                         <span asp-validation-for="ProfilepictureURL" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <img id="ProfilepicturePreview">
+                        <img class="border-info rounded-circle" style="max-width: 150px;" id="ProfilepicturePreview">
                     </div>
                     <div class="form-group">
                         <label asp-for="FullName" class="control-label"></label>
@@ -41,9 +41,13 @@
 
 @section Scripts{
     <script>
+        $(document).ready(function(){
+            var output = document.getElementById("ProfilepicturePreview");
+            output.src = $("#ProfilepictureURL").val();
+        })
+
         $("#ProfilepictureURL").on("change", function(){
             var output = document.getElementById("ProfilepicturePreview");
-            console.log($(this).val());
             output.src = $(this).val();
         })
     </script>

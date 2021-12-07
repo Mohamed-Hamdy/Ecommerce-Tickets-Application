@@ -15639,6 +15639,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Actor\\Edit.cshtml",
+      "TargetPath": "Views\\Actor\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -15646,6 +15651,16 @@
     {
       "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Actor\\Details.cshtml",
+      "TargetPath": "Views\\Actor\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Shared\\NotFound.cshtml",
+      "TargetPath": "Views\\Shared\\NotFound.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15671,6 +15686,11 @@
     {
       "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Actor\\Index.cshtml",
       "TargetPath": "Views\\Actor\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Actor\\Delete.cshtml",
+      "TargetPath": "Views\\Actor\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
