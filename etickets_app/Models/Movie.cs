@@ -12,11 +12,26 @@ namespace eTickets.Models
     {
         [Key]
         public int Id { get; set; }
+
+        [Column(TypeName = "varchar(150)")]
+        [Display(Name = "Name")]
         public string Name { get; set; }
+
+        [Column(TypeName = "text")]
+        [Display(Name = "Discription")]
         public string Discription { get; set; }
+
+        [Display(Name = "Price")]
         public double Price { get; set; }
+
+        [Column(TypeName = "varchar(250)")]
+        [Display(Name = "Image")]
         public string ImageURL { get; set; }
+
+        [Display(Name = "Start Date")]
         public DateTime StartDate { get; set; }
+
+        [Display(Name = "End Date")]
         public DateTime EndDate { get; set; }
         public MovieCategory MovieCategory { get; set; }
         // relationships 

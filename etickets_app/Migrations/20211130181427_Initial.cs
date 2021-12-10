@@ -14,9 +14,9 @@ namespace etickets_app.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    ProfilepictureURL = table.Column<string>(type: "text", nullable: true),
-                    FullName = table.Column<string>(type: "text", nullable: true),
-                    Bio = table.Column<string>(type: "text", nullable: true)
+                    ProfilepictureURL = table.Column<string>(type: "varchar(500)", nullable: true),
+                    FullName = table.Column<string>(type: "varchar(150)", nullable: true),
+                    Bio = table.Column<string>(type: "text(2000)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -29,9 +29,9 @@ namespace etickets_app.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    Logo = table.Column<string>(type: "text", nullable: true),
-                    Name = table.Column<string>(type: "text", nullable: true),
-                    Discription = table.Column<string>(type: "text", nullable: true)
+                    Logo = table.Column<string>(type: "varchar(500)", nullable: true),
+                    Name = table.Column<string>(type: "varchar(150)", nullable: true),
+                    Discription = table.Column<string>(type: "text(1000)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -44,9 +44,9 @@ namespace etickets_app.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    ProfilepictureURL = table.Column<string>(type: "text", nullable: true),
-                    FullName = table.Column<string>(type: "text", nullable: true),
-                    Bio = table.Column<string>(type: "text", nullable: true)
+                    ProfilepictureURL = table.Column<string>(type: "varchar(500)", nullable: true),
+                    FullName = table.Column<string>(type: "varchar(150)", nullable: true),
+                    Bio = table.Column<string>(type: "text(2000)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -59,10 +59,10 @@ namespace etickets_app.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(type: "text", nullable: true),
-                    Discription = table.Column<string>(type: "text", nullable: true),
+                    Name = table.Column<string>(type: "varchar(150)", nullable: true),
+                    Discription = table.Column<string>(type: "text(1000)", nullable: true),
                     Price = table.Column<double>(type: "double", nullable: false),
-                    ImageURL = table.Column<string>(type: "text", nullable: true),
+                    ImageURL = table.Column<string>(type: "varchar(250)", nullable: true),
                     StartDate = table.Column<DateTime>(type: "datetime", nullable: false),
                     EndDate = table.Column<DateTime>(type: "datetime", nullable: false),
                     MovieCategory = table.Column<int>(type: "int", nullable: false),
