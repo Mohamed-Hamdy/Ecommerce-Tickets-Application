@@ -26,6 +26,7 @@ namespace etickets_app
             services.AddDbContext<AppDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("DefaultConnectionString")));
             
             services.AddScoped<IActorsService, ActorService>();
+            services.AddScoped<IMoviesService, MoviesService>();
 
             services.AddControllersWithViews();
         }

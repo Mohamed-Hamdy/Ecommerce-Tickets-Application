@@ -125,3 +125,8 @@ F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Actors\
 F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Actors\Details.cshtml.g.cs
 F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Actors\Edit.cshtml.g.cs
 F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Actors\Index.cshtml.g.cs
+F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Movies\Details.cshtml.g.cs
+F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Movies\Create.cshtml.g.cs
+F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\PartialViews\_CreateItem.cshtml.g.cs
+F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Movies\Edit.cshtml.g.cs
+F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Movies\Delete.cshtml.g.cs
