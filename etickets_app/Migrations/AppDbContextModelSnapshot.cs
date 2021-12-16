@@ -27,10 +27,11 @@ namespace etickets_app.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("FullName")
-                        .HasColumnType("text");
+                        .HasMaxLength(70)
+                        .HasColumnType("varchar(150)");
 
                     b.Property<string>("ProfilepictureURL")
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(500)");
 
                     b.HasKey("Id");
 
@@ -62,10 +63,11 @@ namespace etickets_app.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Logo")
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(500)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("text");
+                        .HasMaxLength(70)
+                        .HasColumnType("varchar(150)");
 
                     b.HasKey("Id");
 
@@ -88,13 +90,13 @@ namespace etickets_app.Migrations
                         .HasColumnType("datetime");
 
                     b.Property<string>("ImageURL")
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<int>("MovieCategory")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(150)");
 
                     b.Property<double>("Price")
                         .HasColumnType("double");
@@ -121,17 +123,87 @@ namespace etickets_app.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Bio")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasColumnType("varchar(150)");
 
                     b.Property<string>("FullName")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasMaxLength(70)
+                        .HasColumnType("varchar(150)");
 
                     b.Property<string>("ProfilepictureURL")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasColumnType("varchar(500)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Producers");
+                });
+
+            modelBuilder.Entity("etickets_app.Models.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("text");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("etickets_app.Models.OrderItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("double");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MovieId");
+
+                    b.HasIndex("OrderId");
+
+                    b.ToTable("OrderItems");
+                });
+
+            modelBuilder.Entity("etickets_app.Models.ShoppingCartItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MovieId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ShoppingCartId")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MovieId");
+
+                    b.ToTable("ShoppingCartItems");
                 });
 
             modelBuilder.Entity("eTickets.Models.Actor_Movie", b =>
@@ -172,6 +244,34 @@ namespace etickets_app.Migrations
                     b.Navigation("Producer");
                 });
 
+            modelBuilder.Entity("etickets_app.Models.OrderItem", b =>
+                {
+                    b.HasOne("eTickets.Models.Movie", "Movie")
+                        .WithMany()
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("etickets_app.Models.Order", "Order")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Movie");
+
+                    b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("etickets_app.Models.ShoppingCartItem", b =>
+                {
+                    b.HasOne("eTickets.Models.Movie", "Movie")
+                        .WithMany()
+                        .HasForeignKey("MovieId");
+
+                    b.Navigation("Movie");
+                });
+
             modelBuilder.Entity("eTickets.Models.Actor", b =>
                 {
                     b.Navigation("Actors_Movies");
@@ -190,6 +290,11 @@ namespace etickets_app.Migrations
             modelBuilder.Entity("eTickets.Models.Producer", b =>
                 {
                     b.Navigation("Movies");
+                });
+
+            modelBuilder.Entity("etickets_app.Models.Order", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 #pragma warning restore 612, 618
         }

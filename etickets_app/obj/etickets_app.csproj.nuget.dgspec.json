@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C#\\Projects\\etickets_app\\etickets_app\\etickets_app.csproj": {}
+    "D:\\etickets_app\\etickets_app\\etickets_app.csproj": {}
   },
   "projects": {
-    "E:\\C#\\Projects\\etickets_app\\etickets_app\\etickets_app.csproj": {
+    "D:\\etickets_app\\etickets_app\\etickets_app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#\\Projects\\etickets_app\\etickets_app\\etickets_app.csproj",
+        "projectUniqueName": "D:\\etickets_app\\etickets_app\\etickets_app.csproj",
         "projectName": "etickets_app",
-        "projectPath": "E:\\C#\\Projects\\etickets_app\\etickets_app\\etickets_app.csproj",
+        "projectPath": "D:\\etickets_app\\etickets_app\\etickets_app.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\Projects\\etickets_app\\etickets_app\\obj\\",
+        "outputPath": "D:\\etickets_app\\etickets_app\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.12, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             },
             "MySql.EntityFrameworkCore": {
               "target": "Package",
