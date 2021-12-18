@@ -156,3 +156,4 @@ D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\Components\Shop
 D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Order\OrderCompleted.cshtml.g.cs
 D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Order\Index.cshtml.g.cs
 D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.csproj.AssemblyReference.cache
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\PartialViews\_CreateItem.cshtml.g.cs

@@ -18,9 +18,9 @@ namespace etickets_app.Data.Services
 
         public async Task<List<Order>> GetOrdersByUserIdAndRoleAsync(string userId)
         {
-            var orders = await _context.Orders.Include(n => n.OrderItems).ThenInclude(n => n.Movie).Include(n => n.UserId
+            var orders = await _context.Orders.Include(n => n.OrderItems).ThenInclude(n => n.Movie).Where(n => n.UserId
             == userId).ToListAsync();
-
+            
             return orders;
         }
 
