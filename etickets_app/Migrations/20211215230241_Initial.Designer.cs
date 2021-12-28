@@ -9,7 +9,7 @@ using eTickets.Data;
 namespace etickets_app.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20211130181427_Initial")]
+    [Migration("20211215230241_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,12 +26,16 @@ namespace etickets_app.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Bio")
-                        .HasColumnType("text(2000)");
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasMaxLength(70)
                         .HasColumnType("varchar(150)");
 
                     b.Property<string>("ProfilepictureURL")
+                        .IsRequired()
                         .HasColumnType("varchar(500)");
 
                     b.HasKey("Id");
@@ -61,7 +65,7 @@ namespace etickets_app.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Discription")
-                        .HasColumnType("text(1000)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Logo")
                         .HasColumnType("varchar(500)");
@@ -84,7 +88,7 @@ namespace etickets_app.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Discription")
-                        .HasColumnType("text(1000)");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime");
@@ -123,7 +127,7 @@ namespace etickets_app.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Bio")
-                        .HasColumnType("text(2000)");
+                        .HasColumnType("text");
 
                     b.Property<string>("FullName")
                         .HasColumnType("varchar(150)");

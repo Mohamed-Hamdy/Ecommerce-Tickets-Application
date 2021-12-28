@@ -14,20 +14,41 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "F:\.NET projectss\etickets_app\etickets_app\Views\_ViewImports.cshtml"
-using etickets_app;
+using eTickets;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 2 "F:\.NET projectss\etickets_app\etickets_app\Views\_ViewImports.cshtml"
+using etickets_app;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "F:\.NET projectss\etickets_app\etickets_app\Views\_ViewImports.cshtml"
 using etickets_app.Models;
 
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "F:\.NET projectss\etickets_app\etickets_app\Views\_ViewImports.cshtml"
+using eTickets.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "F:\.NET projectss\etickets_app\etickets_app\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d0dd4e54bf30ff5beed0011432130aaf5fd35274", @"/Views/Shared/NotFound.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"addd2a99afd733efcfd908d16a68f12f557201d9", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dce35d80103368c149f13856991084bd862ecb92", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_NotFound : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-outline-success"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -58,7 +79,7 @@ using etickets_app.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<div class=\"row\">\r\n    <div class=\"col-md-6 offset-3\">\r\n        <h1 class=\"text-info\">Page Not Found</h1>\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0dd4e54bf30ff5beed0011432130aaf5fd352744151", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0dd4e54bf30ff5beed0011432130aaf5fd352744680", async() => {
                 WriteLiteral("Home Page");
             }
             );
