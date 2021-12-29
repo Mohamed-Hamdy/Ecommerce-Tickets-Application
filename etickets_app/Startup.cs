@@ -1,4 +1,5 @@
 using eTickets.Data;
+using eTickets.Data.Cart;
 using etickets_app.Data;
 using eTickets.Data.Services;
 using Microsoft.AspNetCore.Builder;
@@ -7,6 +8,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Http;
+using eTickets.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace etickets_app
 {
@@ -26,6 +31,20 @@ namespace etickets_app
             services.AddDbContext<AppDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("DefaultConnectionString")));
             
             services.AddScoped<IActorsService, ActorService>();
+            services.AddScoped<IMoviesService, MoviesService>();
+            services.AddScoped<IOrdersService, OrdersService>();
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped(sc => ShoppingCart.GetShoppingCart(sc));
+
+            //Authorization and Authentication
+            services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+            services.AddMemoryCache();
+
+            services.AddSession();
+            services.AddAuthentication(options => {
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            });
 
             services.AddControllersWithViews();
         }
@@ -46,9 +65,12 @@ namespace etickets_app
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseSession();
             app.UseRouting();
-
+            
+            app.UseAuthentication();
             app.UseAuthorization();
+            
 
             app.UseEndpoints(endpoints =>
             {
@@ -58,6 +80,7 @@ namespace etickets_app
             });
             // seed Database
             AppDbInitializer.Seed(app); 
+            AppDbInitializer.SeedUsersAndRolesAsync(app).Wait();
         }
     }
 }

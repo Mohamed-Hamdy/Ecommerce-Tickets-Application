@@ -13566,6 +13566,23 @@
         }
       },
       {
+        "HashCode": -909138699,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__ShoppingCartSummaryViewComponentTagHelper",
+        "AssemblyName": "etickets_app",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:shopping-cart-summary"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__ShoppingCartSummaryViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "ShoppingCartSummary"
+        }
+      },
+      {
         "HashCode": 141407075,
         "Kind": "Components.Bind",
         "Name": "Bind",
@@ -15624,13 +15641,38 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Movies\\Create.cshtml",
+      "TargetPath": "Views\\Movies\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Producers\\Index.cshtml",
       "TargetPath": "Views\\Producers\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Actor\\Create.cshtml",
-      "TargetPath": "Views\\Actor\\Create.cshtml",
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Account\\AccessDenied.cshtml",
+      "TargetPath": "Views\\Account\\AccessDenied.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Account\\Register.cshtml",
+      "TargetPath": "Views\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Account\\Users.cshtml",
+      "TargetPath": "Views\\Account\\Users.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Shared\\PartialViews\\_CreateItem.cshtml",
+      "TargetPath": "Views\\Shared\\PartialViews\\_CreateItem.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Movies\\Delete.cshtml",
+      "TargetPath": "Views\\Movies\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15639,8 +15681,28 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Actor\\Edit.cshtml",
-      "TargetPath": "Views\\Actor\\Edit.cshtml",
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Actors\\Create.cshtml",
+      "TargetPath": "Views\\Actors\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Account\\Login.cshtml",
+      "TargetPath": "Views\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Orders\\OrderCompleted.cshtml",
+      "TargetPath": "Views\\Orders\\OrderCompleted.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Orders\\Index.cshtml",
+      "TargetPath": "Views\\Orders\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Actors\\Index.cshtml",
+      "TargetPath": "Views\\Actors\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15649,18 +15711,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Shared\\PartialViews\\_Identity.cshtml",
+      "TargetPath": "Views\\Shared\\PartialViews\\_Identity.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Actor\\Details.cshtml",
-      "TargetPath": "Views\\Actor\\Details.cshtml",
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Actors\\Delete.cshtml",
+      "TargetPath": "Views\\Actors\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
       "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Shared\\NotFound.cshtml",
       "TargetPath": "Views\\Shared\\NotFound.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Movies\\Details.cshtml",
+      "TargetPath": "Views\\Movies\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15679,23 +15751,43 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Actors\\Details.cshtml",
+      "TargetPath": "Views\\Actors\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Actor\\Index.cshtml",
-      "TargetPath": "Views\\Actor\\Index.cshtml",
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Shared\\Components\\ShoppingCartSummary\\Default.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\ShoppingCartSummary\\Default.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Actor\\Delete.cshtml",
-      "TargetPath": "Views\\Actor\\Delete.cshtml",
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Movies\\Edit.cshtml",
+      "TargetPath": "Views\\Movies\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Orders\\ShoppingCart.cshtml",
+      "TargetPath": "Views\\Orders\\ShoppingCart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Account\\RegisterCompleted.cshtml",
+      "TargetPath": "Views\\Account\\RegisterCompleted.cshtml",
       "FileKind": "mvc"
     },
     {
       "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Movies\\Index.cshtml",
       "TargetPath": "Views\\Movies\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Actors\\Edit.cshtml",
+      "TargetPath": "Views\\Actors\\Edit.cshtml",
       "FileKind": "mvc"
     }
   ],

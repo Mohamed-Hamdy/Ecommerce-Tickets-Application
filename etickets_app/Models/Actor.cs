@@ -26,7 +26,7 @@ namespace eTickets.Models
 
         [Column(TypeName = "text")]
         [Display(Name = "Biography")]
-        [Required(ErrorMessage = "Biography is required.")]
+        [Required(ErrorMessage = "Biography is required.")]     
         public string Bio { get; set; }
 
         // relationships 
