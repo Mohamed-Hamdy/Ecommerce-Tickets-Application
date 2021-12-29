@@ -1,6 +1,8 @@
 ﻿using eTickets.Data;
+using eTickets.Data.Static;
 using eTickets.Models;
 using etickets_app.Data.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -10,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace eTickets.Controllers
 {
+    [Authorize(Roles = UserRoles.Admin)]
     public class ProducersController : Controller
     {
         private readonly IProducersService _service;
@@ -18,7 +21,8 @@ namespace eTickets.Controllers
             _service = service;
         }
 
-         public async Task <IActionResult> Index()
+        [AllowAnonymous]
+        public async Task <IActionResult> Index()
         {
             var allproducers = await _service.GetAllAsync();
             return View(allproducers);
@@ -28,6 +32,7 @@ namespace eTickets.Controllers
             return View();
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int id)
         {
             var producer_Details = await _service.GetByIdAsync(id);

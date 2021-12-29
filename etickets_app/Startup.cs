@@ -10,6 +10,9 @@ using Microsoft.Extensions.Hosting;
 using etickets_app.Data.Services;
 using Microsoft.AspNetCore.Http;
 using etickets_app.Data.Cart;
+using eTickets.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace etickets_app
 {
@@ -38,8 +41,20 @@ namespace etickets_app
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped(sc => ShoppingCart.GetShoppingCart(sc));
 
+            //Authorization and Authentication
+            services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+            services.AddMemoryCache();
+
             services.AddSession();
+            services.AddAuthentication(options => {
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            });
+
             services.AddControllersWithViews();
+
+
+            //services.AddSession();
+            //services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,8 +75,10 @@ namespace etickets_app
 
             app.UseRouting();
             app.UseSession();
+            
+            app.UseAuthentication();
             app.UseAuthorization();
-
+           
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
@@ -70,6 +87,7 @@ namespace etickets_app
             });
             // seed Database
             AppDbInitializer.Seed(app);
+            AppDbInitializer.SeedUsersAndRolesAsync(app).Wait();
         }
     }
 }

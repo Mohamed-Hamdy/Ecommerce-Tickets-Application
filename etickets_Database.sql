@@ -35,7 +35,7 @@ CREATE TABLE `__efmigrationshistory` (
 
 LOCK TABLES `__efmigrationshistory` WRITE;
 /*!40000 ALTER TABLE `__efmigrationshistory` DISABLE KEYS */;
-INSERT INTO `__efmigrationshistory` VALUES ('20211129123807_Initial','5.0.12'),('20211130181427_Initial','5.0.12'),('20211213231254_Initial','5.0.12'),('20211213235101_ShoppingCartItems_Added','5.0.12');
+INSERT INTO `__efmigrationshistory` VALUES ('20211129123807_Initial','5.0.12'),('20211130181427_Initial','5.0.12'),('20211213231254_Initial','5.0.12'),('20211213235101_ShoppingCartItems_Added','5.0.12'),('20211215230241_Initial','5.0.12'),('20211216140629_Identity_Added','5.0.12'),('20211217102939_Order_And_OrderItem_Added','5.0.12'),('20211229165201_.','5.0.12'),('20211229165306_Identity_Added','5.0.12'),('20211229172713_Identity_Added','5.0.12'),('20211229173234_Identity_Added','5.0.12');
 /*!40000 ALTER TABLE `__efmigrationshistory` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -90,6 +90,210 @@ LOCK TABLES `actors_movies` WRITE;
 /*!40000 ALTER TABLE `actors_movies` DISABLE KEYS */;
 INSERT INTO `actors_movies` VALUES (1,1),(1,3),(2,1),(2,4),(3,1),(3,2),(3,5),(4,2),(4,3),(4,4),(5,2),(5,3),(5,4),(5,5),(6,3),(6,4),(6,5);
 /*!40000 ALTER TABLE `actors_movies` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aspnetroleclaims`
+--
+
+DROP TABLE IF EXISTS `aspnetroleclaims`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `aspnetroleclaims` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `RoleId` varchar(150) NOT NULL,
+  `ClaimType` text,
+  `ClaimValue` text,
+  PRIMARY KEY (`Id`),
+  KEY `IX_AspNetRoleClaims_RoleId` (`RoleId`),
+  CONSTRAINT `FK_AspNetRoleClaims_AspNetRoles_RoleId` FOREIGN KEY (`RoleId`) REFERENCES `aspnetroles` (`Id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aspnetroleclaims`
+--
+
+LOCK TABLES `aspnetroleclaims` WRITE;
+/*!40000 ALTER TABLE `aspnetroleclaims` DISABLE KEYS */;
+/*!40000 ALTER TABLE `aspnetroleclaims` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aspnetroles`
+--
+
+DROP TABLE IF EXISTS `aspnetroles`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `aspnetroles` (
+  `Id` varchar(150) NOT NULL,
+  `Name` varchar(256) DEFAULT NULL,
+  `NormalizedName` varchar(256) DEFAULT NULL,
+  `ConcurrencyStamp` text,
+  PRIMARY KEY (`Id`),
+  UNIQUE KEY `RoleNameIndex` (`NormalizedName`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aspnetroles`
+--
+
+LOCK TABLES `aspnetroles` WRITE;
+/*!40000 ALTER TABLE `aspnetroles` DISABLE KEYS */;
+INSERT INTO `aspnetroles` VALUES ('38fa7685-72e1-4e49-8e31-36180831996e','User','USER','bbaa92fa-fd87-4e32-97d8-661eed26a8f7'),('65ea204b-7ddc-4ec1-a36a-d6bd991ad51f','Admin','ADMIN','66ad0091-65e2-48b6-9cd5-98bd37ee6949');
+/*!40000 ALTER TABLE `aspnetroles` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aspnetuserclaims`
+--
+
+DROP TABLE IF EXISTS `aspnetuserclaims`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `aspnetuserclaims` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `UserId` varchar(150) NOT NULL,
+  `ClaimType` text,
+  `ClaimValue` text,
+  PRIMARY KEY (`Id`),
+  KEY `IX_AspNetUserClaims_UserId` (`UserId`),
+  CONSTRAINT `FK_AspNetUserClaims_AspNetUsers_UserId` FOREIGN KEY (`UserId`) REFERENCES `aspnetusers` (`Id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aspnetuserclaims`
+--
+
+LOCK TABLES `aspnetuserclaims` WRITE;
+/*!40000 ALTER TABLE `aspnetuserclaims` DISABLE KEYS */;
+/*!40000 ALTER TABLE `aspnetuserclaims` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aspnetuserlogins`
+--
+
+DROP TABLE IF EXISTS `aspnetuserlogins`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `aspnetuserlogins` (
+  `LoginProvider` varchar(200) NOT NULL,
+  `ProviderKey` varchar(200) NOT NULL,
+  `ProviderDisplayName` text,
+  `UserId` varchar(200) NOT NULL,
+  PRIMARY KEY (`LoginProvider`,`ProviderKey`),
+  KEY `IX_AspNetUserLogins_UserId` (`UserId`),
+  CONSTRAINT `FK_AspNetUserLogins_AspNetUsers_UserId` FOREIGN KEY (`UserId`) REFERENCES `aspnetusers` (`Id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aspnetuserlogins`
+--
+
+LOCK TABLES `aspnetuserlogins` WRITE;
+/*!40000 ALTER TABLE `aspnetuserlogins` DISABLE KEYS */;
+/*!40000 ALTER TABLE `aspnetuserlogins` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aspnetuserroles`
+--
+
+DROP TABLE IF EXISTS `aspnetuserroles`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `aspnetuserroles` (
+  `UserId` varchar(150) NOT NULL,
+  `RoleId` varchar(150) NOT NULL,
+  PRIMARY KEY (`UserId`,`RoleId`),
+  KEY `IX_AspNetUserRoles_RoleId` (`RoleId`),
+  CONSTRAINT `FK_AspNetUserRoles_AspNetRoles_RoleId` FOREIGN KEY (`RoleId`) REFERENCES `aspnetroles` (`Id`) ON DELETE CASCADE,
+  CONSTRAINT `FK_AspNetUserRoles_AspNetUsers_UserId` FOREIGN KEY (`UserId`) REFERENCES `aspnetusers` (`Id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aspnetuserroles`
+--
+
+LOCK TABLES `aspnetuserroles` WRITE;
+/*!40000 ALTER TABLE `aspnetuserroles` DISABLE KEYS */;
+INSERT INTO `aspnetuserroles` VALUES ('1188c975-111d-4cd5-a20f-28a9bbf4a7c0','38fa7685-72e1-4e49-8e31-36180831996e'),('b719ce15-acab-49dd-b96f-bd4dac0f797d','38fa7685-72e1-4e49-8e31-36180831996e'),('842a7e77-626b-4e61-9fa0-a93255857cd3','65ea204b-7ddc-4ec1-a36a-d6bd991ad51f');
+/*!40000 ALTER TABLE `aspnetuserroles` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aspnetusers`
+--
+
+DROP TABLE IF EXISTS `aspnetusers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `aspnetusers` (
+  `Id` varchar(150) NOT NULL,
+  `FullName` text,
+  `is_active` tinyint(1) NOT NULL DEFAULT '1',
+  `is_staff` tinyint(1) NOT NULL DEFAULT '0',
+  `is_superuser` tinyint(1) NOT NULL DEFAULT '0',
+  `UserName` varchar(256) DEFAULT NULL,
+  `NormalizedUserName` varchar(256) DEFAULT NULL,
+  `Email` varchar(256) DEFAULT NULL,
+  `NormalizedEmail` varchar(256) DEFAULT NULL,
+  `EmailConfirmed` tinyint(1) NOT NULL,
+  `PasswordHash` text,
+  `SecurityStamp` text,
+  `ConcurrencyStamp` text,
+  `PhoneNumber` text,
+  `PhoneNumberConfirmed` tinyint(1) NOT NULL,
+  `TwoFactorEnabled` tinyint(1) NOT NULL,
+  `LockoutEnd` timestamp NULL DEFAULT NULL,
+  `LockoutEnabled` tinyint(1) NOT NULL,
+  `AccessFailedCount` int NOT NULL,
+  PRIMARY KEY (`Id`),
+  UNIQUE KEY `UserNameIndex` (`NormalizedUserName`),
+  KEY `EmailIndex` (`NormalizedEmail`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aspnetusers`
+--
+
+LOCK TABLES `aspnetusers` WRITE;
+/*!40000 ALTER TABLE `aspnetusers` DISABLE KEYS */;
+INSERT INTO `aspnetusers` VALUES ('1188c975-111d-4cd5-a20f-28a9bbf4a7c0','Application User',1,0,0,'app-user','APP-USER','user@eTickets.com','USER@ETICKETS.COM',1,'AQAAAAEAACcQAAAAENJGytqomIKmtWxASZL3iMjpuBWOqYUkcECXMro5lXaQK60cUTTh7lKj19cyDkNaoA==','ZWV4FW2RI6NMLB5ONU7464LN2ZIYS7A5','51d065f0-0804-4080-85b2-bab02633768d',NULL,0,0,NULL,1,0),('842a7e77-626b-4e61-9fa0-a93255857cd3','Admin User',1,0,0,'admin-user','ADMIN-USER','admin@eTickets.com','ADMIN@ETICKETS.COM',1,'AQAAAAEAACcQAAAAEFGmlyJumUbwKdjPCIww1ehTcYGcZbtV75xCLCPfG0jMcmGOGcdfBokKMm4E2/QihQ==','3SHNH2G5GNKBTAPBIN2OMHFQIEABUEJJ','c1f2d0c3-0722-4dd2-b298-5e82fc096dcb',NULL,0,0,NULL,1,0),('b719ce15-acab-49dd-b96f-bd4dac0f797d','Mohamed Hamdy ',1,0,0,'mohamed547754@gmail.com','MOHAMED547754@GMAIL.COM','mohamed547754@gmail.com','MOHAMED547754@GMAIL.COM',0,'AQAAAAEAACcQAAAAEJddd2xowWnuFdKeyBpTAwRY4+BEyqTavQonjRb1pFT2QpKCkrT/cQRQaXLMvvAMUg==','FGGARM76I7ROVADUIJMTIJFZU2OU2C2H','bac68d43-c884-4d47-a0de-6da3ddf343da',NULL,0,0,NULL,1,0);
+/*!40000 ALTER TABLE `aspnetusers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `aspnetusertokens`
+--
+
+DROP TABLE IF EXISTS `aspnetusertokens`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `aspnetusertokens` (
+  `UserId` varchar(150) NOT NULL,
+  `LoginProvider` varchar(150) NOT NULL,
+  `Name` varchar(150) NOT NULL,
+  `Value` text,
+  PRIMARY KEY (`UserId`,`LoginProvider`,`Name`),
+  CONSTRAINT `FK_AspNetUserTokens_AspNetUsers_UserId` FOREIGN KEY (`UserId`) REFERENCES `aspnetusers` (`Id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `aspnetusertokens`
+--
+
+LOCK TABLES `aspnetusertokens` WRITE;
+/*!40000 ALTER TABLE `aspnetusertokens` DISABLE KEYS */;
+/*!40000 ALTER TABLE `aspnetusertokens` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -172,7 +376,7 @@ CREATE TABLE `orderitems` (
   KEY `IX_OrderItems_OrderId` (`OrderId`),
   CONSTRAINT `FK_OrderItems_Movies_MovieId` FOREIGN KEY (`MovieId`) REFERENCES `movies` (`Id`) ON DELETE CASCADE,
   CONSTRAINT `FK_OrderItems_Orders_OrderId` FOREIGN KEY (`OrderId`) REFERENCES `orders` (`Id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -181,7 +385,7 @@ CREATE TABLE `orderitems` (
 
 LOCK TABLES `orderitems` WRITE;
 /*!40000 ALTER TABLE `orderitems` DISABLE KEYS */;
-INSERT INTO `orderitems` VALUES (1,1,39.5,2,1),(2,1,39.5,3,2),(3,1,39.5,3,4),(4,2,39.5,5,4),(5,1,39.5,6,4),(6,1,29.5,4,5),(7,2,39.5,5,5),(8,1,39.5,3,5),(9,1,39.5,2,6),(10,1,39.5,3,6),(11,1,39.5,1,7),(12,1,39.5,3,7);
+INSERT INTO `orderitems` VALUES (14,1,39.5,2,9);
 /*!40000 ALTER TABLE `orderitems` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -197,7 +401,7 @@ CREATE TABLE `orders` (
   `Email` text,
   `UserId` text,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -206,7 +410,7 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
-INSERT INTO `orders` VALUES (1,'',''),(2,'',''),(3,'',''),(4,'',''),(5,'',''),(6,NULL,NULL),(7,'','');
+INSERT INTO `orders` VALUES (9,'user@eTickets.com','1188c975-111d-4cd5-a20f-28a9bbf4a7c0');
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -251,7 +455,7 @@ CREATE TABLE `shoppingcartitems` (
   PRIMARY KEY (`Id`),
   KEY `IX_ShoppingCartItems_MovieId` (`MovieId`),
   CONSTRAINT `FK_ShoppingCartItems_Movies_MovieId` FOREIGN KEY (`MovieId`) REFERENCES `movies` (`Id`) ON DELETE RESTRICT
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -273,4 +477,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-12-16  3:46:42
+-- Dump completed on 2021-12-30  1:41:24

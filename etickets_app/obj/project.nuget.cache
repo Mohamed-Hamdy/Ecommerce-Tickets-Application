@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iNRrhJPLJvTiZLUAwQiy9AccnhZLbrQfAA20VPiyaIxDsI8MUEBppwHvjkka2bpLDhdAJNyw4l/uIjImJr+JUg==",
+  "dgSpecHash": "86vMzvq4hRlHQnXkSWpkFjfsSSj19fMxr5l9B9gCmhF4oCfWKyyUMGeza9OIR8hQZQrW0qIG/fIvdpOEhiQTQg==",
   "success": true,
   "projectFilePath": "D:\\etickets_app\\etickets_app\\etickets_app.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,10 @@
     "C:\\Users\\dell\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.8\\microsoft.aspnetcore.cryptography.internal.5.0.8.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.8\\microsoft.aspnetcore.cryptography.keyderivation.5.0.8.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.8\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.8.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\5.0.0\\microsoft.aspnetcore.razor.language.5.0.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.aspnetcore.razor.runtime\\2.2.0\\microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
@@ -33,6 +36,8 @@
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.identity.core\\5.0.8\\microsoft.extensions.identity.core.5.0.8.nupkg.sha512",
+    "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.identity.stores\\5.0.8\\microsoft.extensions.identity.stores.5.0.8.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
