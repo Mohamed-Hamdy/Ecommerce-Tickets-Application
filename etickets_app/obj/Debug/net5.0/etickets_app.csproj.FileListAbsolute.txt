@@ -145,3 +145,5 @@ F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account
 F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\PartialViews\_Identity.cshtml.g.cs
 F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\Users.cshtml.g.cs
 F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\AccessDenied.cshtml.g.cs
+F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\ManageAccount.cshtml.g.cs
+F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\StatusChangedSuccessfully.cshtml.g.cs

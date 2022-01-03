@@ -25,7 +25,7 @@ else
                 <a class="dropdown-item" asp-action="Index" asp-controller="Orders">
                     <i class="bi bi-list"></i> Orders
                 </a>
-                @if(User.IsInRole("Admin"))
+                @if(User.IsInRole("Admin") || User.IsInRole("SuperUser"))
                 {
                     <a class="dropdown-item" asp-action="Users" asp-controller="Account">
                         <i class="bi bi-people"></i> Users

@@ -339,6 +339,9 @@ namespace etickets_app.Data
                 if(! await roleManager.RoleExistsAsync(UserRoles.User))
                     await roleManager.CreateAsync(new IdentityRole(UserRoles.User));
 
+                if(! await roleManager.RoleExistsAsync(UserRoles.SuperUser))
+                    await roleManager.CreateAsync(new IdentityRole(UserRoles.SuperUser));
+
                 var userManager = serviceScope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 
                 string AdminUserEmail = "admin@eTickets.com";
@@ -376,6 +379,12 @@ namespace etickets_app.Data
                     await userManager.CreateAsync(newAppUser, "Coding@12345");
                     await userManager.AddToRoleAsync(newAppUser, UserRoles.User);
                 }
+
+                var superUser = await userManager.Users.Where(u => u.is_superuser == true).FirstAsync();
+
+                if(superUser != null)
+                    if(!await userManager.IsInRoleAsync(superUser, UserRoles.SuperUser))
+                        await userManager.AddToRoleAsync(superUser, UserRoles.SuperUser);
             }
         }
     }

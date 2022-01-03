@@ -15721,6 +15721,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Account\\ManageAccount.cshtml",
+      "TargetPath": "Views\\Account\\ManageAccount.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Actors\\Delete.cshtml",
       "TargetPath": "Views\\Actors\\Delete.cshtml",
       "FileKind": "mvc"
@@ -15743,6 +15748,11 @@
     {
       "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\.NET projectss\\etickets_app\\etickets_app\\Views\\Account\\StatusChangedSuccessfully.cshtml",
+      "TargetPath": "Views\\Account\\StatusChangedSuccessfully.cshtml",
       "FileKind": "mvc"
     },
     {
