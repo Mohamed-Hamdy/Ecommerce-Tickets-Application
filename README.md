@@ -25,9 +25,10 @@ E-tickets project
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This application is an eCommerce application used to buy movies online from different cinemas. You will be able to add items to your card, pay using PayPal and also log in as an administrator to add new cinemas, actors, producers, and movies. 
-<br>
 ![Alt Text](https://github.com/Mohamed-Hamdy/ecommerce-tickets-application/blob/master/images/project%20Run.gif)
+<br><br>
+This application is an eCommerce application used to buy movies online from different cinemas. You will be able to add items to your card, pay using PayPal and also log in as an administrator to add new cinemas, actors, producers, and movies. 
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
