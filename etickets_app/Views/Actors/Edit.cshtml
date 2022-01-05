@@ -11,22 +11,23 @@
             <div class="col-md-8 offset-2">
                 <form asp-action="Edit">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group text-center">
+                        <img class="border-info rounded-circle" style="max-width: 150px;" id="ProfilepicturePreview">
+                    </div>
+
                     <div class="form-group">
                         <label asp-for="ProfilepictureURL" class="control-label"></label>
-                        <input asp-for="ProfilepictureURL" class="form-control"/>
+                        <input asp-for="ProfilepictureURL" class="form-control" required>
                         <span asp-validation-for="ProfilepictureURL" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <img class="border-info rounded-circle" style="max-width: 150px;" id="ProfilepicturePreview">
-                    </div>
-                    <div class="form-group">
                         <label asp-for="FullName" class="control-label"></label>
-                        <input asp-for="FullName" class="form-control">
+                        <input asp-for="FullName" class="form-control" required>
                         <span asp-validation-for="FullName" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label asp-for="Bio" class="control-label"></label>
-                        <input asp-for="Bio" class="form-control">
+                        <input asp-for="Bio" class="form-control" required>
                         <span asp-validation-for="Bio" class="text-danger"></span>
                     </div>
                     <div class="form-group">

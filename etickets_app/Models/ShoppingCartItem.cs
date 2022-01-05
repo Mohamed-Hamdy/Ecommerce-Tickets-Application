@@ -1,18 +1,17 @@
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using eTickets.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace eTickets.Models
+namespace etickets_app.Models
 {
     public class ShoppingCartItem
     {
-        [Key]
         public int Id { get; set; }
-
         public Movie Movie { get; set; }
-
         public int Amount { get; set; }
+        public String ShoppingCartId { get; set; }
 
-        [Column(TypeName = "varchar(150)")]
-        public string ShoppingCartId { get; set; }
     }
 }

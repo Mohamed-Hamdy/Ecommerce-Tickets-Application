@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace eTickets.Models
 {
-    public class Movie:IEntityBase
+    public class Movie : IEntityBase
     {
         [Key]
         public int Id { get; set; }
@@ -47,5 +47,10 @@ namespace eTickets.Models
         public int ProducerId { get; set; }
         [ForeignKey("ProducerId")]
         public Producer Producer { get; set; }
+
+
+
+
+
     }
 }

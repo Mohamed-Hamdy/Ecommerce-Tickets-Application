@@ -11,10 +11,7 @@
                         <p class="card-text">
                             <h5 class="card-title">
                                 @Model.Name
-                                @if(User.Identity.IsAuthenticated && User.IsInRole("Admin"))
-                                {
-                                    <a asp-action="Edit" asp-route-id="@Model.Id" class="text-white float-right"><i class="bi bi-pencil-square"></i></a>
-                                }
+                                <a asp-action="Edit" asp-route-id="@Model.Id" class="text-white float-right"><i class="bi bi-pencil-square"></i></a>
                             </h5>
                         </p>
                     </div>
@@ -80,12 +77,8 @@
                             <a class="btn btn-outline-primary float-right" asp-action="Index">
                                 Back To Movies
                             </a>
-                            @if(User.Identity.IsAuthenticated && User.IsInRole("Admin"))
-                            {
-                                <a class="btn btn-danger text-white float-right" style="margin-right: 5px;" asp-action="Delete" asp-route-id="@Model.Id"><i class="bi bi-trash"></i>Delete </a>
-                            }
-                            <a class="btn btn-success text-white" asp-controller="Orders" asp-route-id="@Model.Id"
-                            asp-action="AddItemToShoppingCart"><i class="bi bi-cart-plus"></i> Add to Cart (Price @Model.Price.ToString("c"))</a>
+                            <a class="btn btn-danger text-white float-right" style="margin-right: 5px;" asp-action="Delete" asp-route-id="@Model.Id"><i class="bi bi-trash"></i>Delete </a>
+                            <a class="btn btn-success text-white" asp-controller="Order" asp-action="AddItemToShoppingCart" asp-route-id="@Model.Id"><i class="bi bi-cart-plus"></i> Add to Cart (Price @Model.Price.ToString("c"))</a>
                         </p>
                     </div>
                 </div>

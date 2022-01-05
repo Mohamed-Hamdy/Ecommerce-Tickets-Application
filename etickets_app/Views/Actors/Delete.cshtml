@@ -9,28 +9,29 @@
         <h1>Delete confirmation for @Model.FullName</h1>
         <div class="row">
             <div class="col-md-8 offset-2">
+                <div class="form-group text-center">
+                    <img class="border-info rounded-circle" style="max-width: 150px;" id="ProfilepicturePreview">
+                </div>
+
                 <div class="form-group">
                     <label asp-for="ProfilepictureURL" class="control-label"></label>
-                    <input asp-for="ProfilepictureURL" class="form-control" readonly/>
+                    <input asp-for="ProfilepictureURL" class="form-control" readonly />
                     <span asp-validation-for="ProfilepictureURL" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <img class="border-info rounded-circle" style="max-width: 150px;" id="ProfilepicturePreview">
-                </div>
-                <div class="form-group">
                     <label asp-for="FullName" class="control-label"></label>
-                    <input asp-for="FullName" class="form-control" readonly/>
+                    <input asp-for="FullName" class="form-control" readonly />
                     <span asp-validation-for="FullName" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="Bio" class="control-label"></label>
-                    <input asp-for="Bio" class="form-control" readonly/>
+                    <input asp-for="Bio" class="form-control" readonly />
                     <span asp-validation-for="Bio" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <form asp-action="Delete">
-                        <input type="hidden" asp-for="Id"/>
-                        <input type="submit" value="Confirme" class="btn btn-danger float-right"/>
+                        <input type="hidden" asp-for="Id" />
+                        <input type="submit" value="Confirme" class="btn btn-danger float-right" />
                     </form>
                     <a asp-action="Index" class="btn btn-outline-success">Show All</a>
                 </div>

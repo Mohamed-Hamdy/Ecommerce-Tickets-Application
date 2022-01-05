@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "F:\\.NET projectss\\etickets_app\\etickets_app\\etickets_app.csproj": {}
+    "D:\\etickets_app\\etickets_app\\etickets_app.csproj": {}
   },
   "projects": {
-    "F:\\.NET projectss\\etickets_app\\etickets_app\\etickets_app.csproj": {
+    "D:\\etickets_app\\etickets_app\\etickets_app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\.NET projectss\\etickets_app\\etickets_app\\etickets_app.csproj",
+        "projectUniqueName": "D:\\etickets_app\\etickets_app\\etickets_app.csproj",
         "projectName": "etickets_app",
-        "projectPath": "F:\\.NET projectss\\etickets_app\\etickets_app\\etickets_app.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "F:\\.NET projectss\\etickets_app\\etickets_app\\obj\\",
+        "projectPath": "D:\\etickets_app\\etickets_app\\etickets_app.csproj",
+        "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
+        "outputPath": "D:\\etickets_app\\etickets_app\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,27 +42,21 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.6, )"
+              "version": "[5.0.8, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.12, )"
             },
-            "Microsoft.EntityFrameworkCore.Design": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[5.0.12, )"
-            },
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.0.27, )"
+              "version": "[5.0.2, )"
             },
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.8, )"
-            },
-            "MySqlConnector": {
-              "target": "Package",
-              "version": "[2.1.0, )"
             }
           },
           "imports": [
@@ -81,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 using eTickets.Data;
-using eTickets.Data.Cart;
+using etickets_app.Data.Cart;
 using eTickets.Data.Static;
 using eTickets.Data.ViewModels;
 using eTickets.Models;
@@ -26,7 +26,7 @@ namespace eTickets.Controllers
             _shoppingCart = shoppingCart;
         }
 
-        [Authorize(Roles = UserRoles.Admin)]
+        [Authorize(Roles = UserRoles.AdminAndSuperUser)]
         public async Task<IActionResult> Users()
         {
             var users = await _context.Users.ToListAsync();
@@ -136,6 +136,46 @@ namespace eTickets.Controllers
         public IActionResult AccessDenied(string ReturnUrl)
         {
             return View();
+        }
+
+        [Authorize(Roles = UserRoles.AdminAndSuperUser)]
+        public async Task<IActionResult> ManageAccount(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            var currentUserRole = HttpContext.User.IsInRole(UserRoles.SuperUser);
+
+            if(await _userManager.IsInRoleAsync(user, UserRoles.SuperUser) && !currentUserRole)
+            {
+                TempData["Error"] = "You have no authority over the account you try to access!";
+                return RedirectToAction(nameof(Users));
+            }
+            if(user != null)
+                return View(user);
+            return RedirectToAction(nameof(Users));
+        }
+
+        [HttpPost, Authorize(Roles = UserRoles.AdminAndSuperUser)]
+        public async Task<IActionResult> ManageAccount(ApplicationUser account)
+        {
+            var isActive = account.is_active;
+            var isAdmine = account.is_staff;
+
+            var user = await _userManager.FindByEmailAsync(account.Email);
+
+            if(user == null)
+                return RedirectToAction(nameof(Users));
+            
+            user.is_active = isActive;
+            user.is_staff = isAdmine;
+
+            if(!isAdmine)
+                await _userManager.RemoveFromRoleAsync(user, UserRoles.Admin);
+            else
+                await _userManager.AddToRoleAsync(user, UserRoles.Admin);
+
+            await _context.SaveChangesAsync();
+
+            return View("StatusChangedSuccessfully");
         }
     }
 }

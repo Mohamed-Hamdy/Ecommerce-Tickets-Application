@@ -20,8 +20,7 @@ namespace etickets_app.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
-                        .HasMaxLength(150)
-                        .HasColumnType("varchar(150)");
+                        .HasColumnType("varchar(767)");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -58,8 +57,7 @@ namespace etickets_app.Migrations
 
                     b.Property<string>("RoleId")
                         .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("varchar(150)");
+                        .HasColumnType("varchar(767)");
 
                     b.HasKey("Id");
 
@@ -82,8 +80,7 @@ namespace etickets_app.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("varchar(150)");
+                        .HasColumnType("varchar(767)");
 
                     b.HasKey("Id");
 
@@ -95,20 +92,17 @@ namespace etickets_app.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(200)
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("varchar(767)");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(200)
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("varchar(767)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("text");
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("varchar(767)");
 
                     b.HasKey("LoginProvider", "ProviderKey");
 
@@ -120,12 +114,10 @@ namespace etickets_app.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasMaxLength(150)
-                        .HasColumnType("varchar(150)");
+                        .HasColumnType("varchar(767)");
 
                     b.Property<string>("RoleId")
-                        .HasMaxLength(150)
-                        .HasColumnType("varchar(150)");
+                        .HasColumnType("varchar(767)");
 
                     b.HasKey("UserId", "RoleId");
 
@@ -137,16 +129,13 @@ namespace etickets_app.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasMaxLength(150)
-                        .HasColumnType("varchar(150)");
+                        .HasColumnType("varchar(767)");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(150)
-                        .HasColumnType("varchar(150)");
+                        .HasColumnType("varchar(767)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(150)
-                        .HasColumnType("varchar(150)");
+                        .HasColumnType("varchar(767)");
 
                     b.Property<string>("Value")
                         .HasColumnType("text");
@@ -163,16 +152,13 @@ namespace etickets_app.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Bio")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("FullName")
-                        .IsRequired()
                         .HasMaxLength(70)
                         .HasColumnType("varchar(150)");
 
                     b.Property<string>("ProfilepictureURL")
-                        .IsRequired()
                         .HasColumnType("varchar(500)");
 
                     b.HasKey("Id");
@@ -198,8 +184,7 @@ namespace etickets_app.Migrations
             modelBuilder.Entity("eTickets.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
-                        .HasMaxLength(150)
-                        .HasColumnType("varchar(150)");
+                        .HasColumnType("varchar(767)");
 
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
@@ -252,16 +237,13 @@ namespace etickets_app.Migrations
                         .HasColumnType("varchar(256)");
 
                     b.Property<bool>("is_active")
-                        .HasColumnType("tinyint(1)")
-                        .HasDefaultValue(true);
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<bool>("is_staff")
-                        .HasColumnType("tinyint(1)")
-                        .HasDefaultValue(false);
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<bool>("is_superuser")
-                        .HasColumnType("tinyint(1)")
-                        .HasDefaultValue(false);
+                        .HasColumnType("tinyint(1)");
 
                     b.HasKey("Id");
 
@@ -288,6 +270,7 @@ namespace etickets_app.Migrations
                         .HasColumnType("varchar(500)");
 
                     b.Property<string>("Name")
+                        .HasMaxLength(70)
                         .HasColumnType("varchar(150)");
 
                     b.HasKey("Id");
@@ -337,24 +320,50 @@ namespace etickets_app.Migrations
                     b.ToTable("Movies");
                 });
 
-            modelBuilder.Entity("eTickets.Models.Order", b =>
+            modelBuilder.Entity("eTickets.Models.Producer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Bio")
+                        .IsRequired()
+                        .HasColumnType("varchar(150)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasMaxLength(70)
+                        .HasColumnType("varchar(150)");
+
+                    b.Property<string>("ProfilepictureURL")
+                        .IsRequired()
+                        .HasColumnType("varchar(500)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Producers");
+                });
+
+            modelBuilder.Entity("etickets_app.Models.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.Property<string>("Email")
-                        .HasColumnType("varchar(150)");
+                        .HasColumnType("text");
 
                     b.Property<string>("UserId")
-                        .HasColumnType("varchar(150)");
+                        .HasColumnType("varchar(767)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Order");
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("eTickets.Models.OrderItem", b =>
+            modelBuilder.Entity("etickets_app.Models.OrderItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -378,30 +387,10 @@ namespace etickets_app.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("OrderItem");
+                    b.ToTable("OrderItems");
                 });
 
-            modelBuilder.Entity("eTickets.Models.Producer", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<string>("Bio")
-                        .HasColumnType("text");
-
-                    b.Property<string>("FullName")
-                        .HasColumnType("varchar(150)");
-
-                    b.Property<string>("ProfilepictureURL")
-                        .HasColumnType("varchar(500)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Producers");
-                });
-
-            modelBuilder.Entity("eTickets.Models.ShoppingCartItem", b =>
+            modelBuilder.Entity("etickets_app.Models.ShoppingCartItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -414,7 +403,7 @@ namespace etickets_app.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ShoppingCartId")
-                        .HasColumnType("varchar(150)");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -512,7 +501,16 @@ namespace etickets_app.Migrations
                     b.Navigation("Producer");
                 });
 
-            modelBuilder.Entity("eTickets.Models.OrderItem", b =>
+            modelBuilder.Entity("etickets_app.Models.Order", b =>
+                {
+                    b.HasOne("eTickets.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("etickets_app.Models.OrderItem", b =>
                 {
                     b.HasOne("eTickets.Models.Movie", "Movie")
                         .WithMany()
@@ -520,7 +518,7 @@ namespace etickets_app.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("eTickets.Models.Order", "Order")
+                    b.HasOne("etickets_app.Models.Order", "Order")
                         .WithMany("OrderItems")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -531,7 +529,7 @@ namespace etickets_app.Migrations
                     b.Navigation("Order");
                 });
 
-            modelBuilder.Entity("eTickets.Models.ShoppingCartItem", b =>
+            modelBuilder.Entity("etickets_app.Models.ShoppingCartItem", b =>
                 {
                     b.HasOne("eTickets.Models.Movie", "Movie")
                         .WithMany()
@@ -555,14 +553,14 @@ namespace etickets_app.Migrations
                     b.Navigation("Actors_Movies");
                 });
 
-            modelBuilder.Entity("eTickets.Models.Order", b =>
-                {
-                    b.Navigation("OrderItems");
-                });
-
             modelBuilder.Entity("eTickets.Models.Producer", b =>
                 {
                     b.Navigation("Movies");
+                });
+
+            modelBuilder.Entity("etickets_app.Models.Order", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 #pragma warning restore 612, 618
         }

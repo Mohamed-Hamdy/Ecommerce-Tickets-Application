@@ -15,18 +15,18 @@ namespace eTickets.Models
 
         [Column(TypeName = "varchar(500)")]
         [Display(Name = "Profile Picture")]
-        [Required(ErrorMessage = "Profile picture is required.")]
+        //[Required(ErrorMessage = "Profile picture is required.")]
         public string ProfilepictureURL { get; set; }
 
         [Column(TypeName = "varchar(150)")]
         [Display(Name = "Name")]
-        [Required(ErrorMessage = "Name is required.")]
-        [StringLength(70, MinimumLength =3, ErrorMessage ="Name length must be between 3 and 70 char.")]
+        //[Required(ErrorMessage = "Name is required.")]
+        [StringLength(70, MinimumLength =3, ErrorMessage ="Name length must be between 3 and 70 char")]
         public string FullName { get; set; }
 
         [Column(TypeName = "text")]
         [Display(Name = "Biography")]
-        [Required(ErrorMessage = "Biography is required.")]     
+        //[Required(ErrorMessage = "Biography is required.")]
         public string Bio { get; set; }
 
         // relationships 

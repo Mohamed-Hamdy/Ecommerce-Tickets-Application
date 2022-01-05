@@ -12,6 +12,7 @@ using eTickets.Data.Static;
 namespace eTickets.Controllers
 {
     [Authorize(Roles = UserRoles.Admin)]
+
     public class ActorsController : Controller
     {
         private readonly IActorsService _service;
@@ -19,12 +20,10 @@ namespace eTickets.Controllers
         {
             _service = service;
         }
-
         [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var actors = await _service.GetAllAsync();
-
             return View(actors);
         }
 
@@ -46,7 +45,6 @@ namespace eTickets.Controllers
             await _service.AddAsync(actor);
             return RedirectToAction(nameof(Index));
         }
-
         [AllowAnonymous]
         public async Task<IActionResult> Details(int id)
         {

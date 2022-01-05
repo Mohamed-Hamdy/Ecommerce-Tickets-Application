@@ -1,147 +1,172 @@
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.GeneratedMSBuildEditorConfig.editorconfig
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.AssemblyInfoInputs.cache
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.AssemblyInfo.cs
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.csproj.CoreCompileInputs.cache
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.MvcApplicationPartsAssemblyInfo.cache
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.RazorAssemblyInfo.cache
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.RazorAssemblyInfo.cs
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\appsettings.Development.json
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\appsettings.json
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.exe
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.deps.json
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.runtimeconfig.json
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.runtimeconfig.dev.json
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\ref\etickets_app.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.pdb
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.Views.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.Views.pdb
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\BouncyCastle.Crypto.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\Google.Protobuf.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\Humanizer.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\K4os.Compression.LZ4.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\K4os.Compression.LZ4.Streams.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\K4os.Hash.xxHash.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\MySql.Data.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\Ubiety.Dns.Core.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\scopedcss\bundle\etickets_app.styles.css
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\staticwebassets\etickets_app.StaticWebAssets.Manifest.cache
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.TagHelpers.input.cache
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.TagHelpers.output.cache
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.RazorCoreGenerate.cache
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.RazorTargetAssemblyInfo.cache
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.RazorTargetAssemblyInfo.cs
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.Views.pdb
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.csproj.CopyComplete
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.dll
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\ref\etickets_app.dll
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.pdb
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.genruntimeconfig.cache
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\ZstdNet.dll
-E:\C#\Projects\etickets_app\etickets_app\bin\Debug\net5.0\MySql.EntityFrameworkCore.dll
-E:\C#\Projects\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.csproj.AssemblyReference.cache
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\appsettings.Development.json
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\appsettings.json
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.exe
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.deps.json
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.runtimeconfig.json
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.runtimeconfig.dev.json
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\ref\etickets_app.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.pdb
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.Views.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.Views.pdb
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\BouncyCastle.Crypto.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\Google.Protobuf.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\Humanizer.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\K4os.Compression.LZ4.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\K4os.Compression.LZ4.Streams.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\K4os.Hash.xxHash.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\MySql.Data.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\Ubiety.Dns.Core.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\ZstdNet.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\MySql.EntityFrameworkCore.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\MySqlConnector.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.csproj.AssemblyReference.cache
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.GeneratedMSBuildEditorConfig.editorconfig
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.AssemblyInfoInputs.cache
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.AssemblyInfo.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.csproj.CoreCompileInputs.cache
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.MvcApplicationPartsAssemblyInfo.cache
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.RazorAssemblyInfo.cache
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.RazorAssemblyInfo.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\staticwebassets\etickets_app.StaticWebAssets.Manifest.cache
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\staticwebassets\etickets_app.StaticWebAssets.xml
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\scopedcss\bundle\etickets_app.styles.css
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.TagHelpers.input.cache
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.TagHelpers.output.cache
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.RazorCoreGenerate.cache
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.RazorTargetAssemblyInfo.cache
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.RazorTargetAssemblyInfo.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.Views.pdb
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.csproj.CopyComplete
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.dll
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\ref\etickets_app.dll
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.pdb
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.genruntimeconfig.cache
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Cinemas\Index.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Movies\Index.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Producers\Index.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\NotFound.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Actors\Create.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Actors\Delete.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Actors\Details.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Actors\Edit.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Actors\Index.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Movies\Details.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Movies\Create.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\PartialViews\_CreateItem.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Movies\Edit.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Movies\Delete.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
-F:\.NET projectss\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Orders\ShoppingCart.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\Components\ShoppingCartSummary\Default.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Orders\OrderCompleted.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Orders\Index.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\RegisterCompleted.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\PartialViews\_Identity.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\Users.cshtml.g.cs
-F:\.NET projectss\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\AccessDenied.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.GeneratedMSBuildEditorConfig.editorconfig
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.AssemblyInfoInputs.cache
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.AssemblyInfo.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.csproj.CoreCompileInputs.cache
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.MvcApplicationPartsAssemblyInfo.cache
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.RazorAssemblyInfo.cache
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.RazorAssemblyInfo.cs
+D:\etickets_app\etickets_app\bin\Debug\net5.0\appsettings.Development.json
+D:\etickets_app\etickets_app\bin\Debug\net5.0\appsettings.json
+D:\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.exe
+D:\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.deps.json
+D:\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.runtimeconfig.json
+D:\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.runtimeconfig.dev.json
+D:\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\ref\etickets_app.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.pdb
+D:\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.Views.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\etickets_app.Views.pdb
+D:\etickets_app\etickets_app\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Google.Protobuf.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Humanizer.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\K4os.Compression.LZ4.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\K4os.Compression.LZ4.Streams.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\K4os.Hash.xxHash.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\MySql.Data.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Ubiety.Dns.Core.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\ZstdNet.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\MySql.EntityFrameworkCore.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\etickets_app\etickets_app\obj\Debug\net5.0\scopedcss\bundle\etickets_app.styles.css
+D:\etickets_app\etickets_app\obj\Debug\net5.0\staticwebassets\etickets_app.StaticWebAssets.Manifest.cache
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.TagHelpers.input.cache
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.TagHelpers.output.cache
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.RazorCoreGenerate.cache
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Actors\Create.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Actors\Delete.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Actors\Details.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Actors\Edit.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Actors\Index.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Cinemas\Index.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Movies\Index.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Producers\Index.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\NotFound.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.RazorTargetAssemblyInfo.cache
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.RazorTargetAssemblyInfo.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.Views.pdb
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.csproj.CopyComplete
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.dll
+D:\etickets_app\etickets_app\obj\Debug\net5.0\ref\etickets_app.dll
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.pdb
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.genruntimeconfig.cache
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Producers\Create.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Producers\Delete.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Producers\Details.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Producers\Edit.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Cinemas\Create.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Cinemas\Delete.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Cinemas\Details.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Cinemas\Edit.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Movies\Create.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Movies\Delete.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Movies\Details.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Movies\Edit.cshtml.g.cs
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\System.Composition.Convention.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\System.Composition.Hosting.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\System.Composition.Runtime.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\System.Composition.TypedParts.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\etickets_app\etickets_app\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Order\ShoppingCart.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\Components\ShoppingCartSummary\Default.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Order\OrderCompleted.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Order\Index.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\etickets_app.csproj.AssemblyReference.cache
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\PartialViews\_CreateItem.cshtml.g.cs
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\etickets_app\etickets_app\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\AccessDenied.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\RegisterCompleted.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\Users.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Shared\PartialViews\_Identity.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\ManageAccount.cshtml.g.cs
+D:\etickets_app\etickets_app\obj\Debug\net5.0\Razor\Views\Account\StatusChangedSuccessfully.cshtml.g.cs
