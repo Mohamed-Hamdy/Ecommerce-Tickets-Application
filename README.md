@@ -14,7 +14,6 @@ E-tickets project
         <li><a href="#User-Panel">User Panel</a></li>
       </ul>
     </li>
-
     <li><a href="#usage">Usage</a></li>
     <li><a href="#Concepts included in project">General concepts in project</a></li>
     <li><a href="#license">License</a></li>
@@ -25,9 +24,9 @@ E-tickets project
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-![Alt Text](https://github.com/Mohamed-Hamdy/ecommerce-tickets-application/blob/master/images/project%20Run.gif)
 This application is an eCommerce application used to buy movies online from different cinemas. You will be able to add items to your card, pay using PayPal and also log in as an administrator to add new cinemas, actors, producers, and movies. 
+<br>
+![Alt Text](https://github.com/Mohamed-Hamdy/ecommerce-tickets-application/blob/master/images/project%20Run.gif)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
