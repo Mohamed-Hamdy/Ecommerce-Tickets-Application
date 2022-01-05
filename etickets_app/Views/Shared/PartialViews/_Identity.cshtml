@@ -1,4 +1,4 @@
-@inject UserManager<eTickets.Models.ApplicationUser> userManager;
+@inject UserManager<ApplicationUser> userManager;
 
 
 @if (!User.Identity.IsAuthenticated)
@@ -22,14 +22,15 @@ else
         </button>
         <ul class="dropdown-menu" aria-labelledby="profile-btn">
             <li>
-                <a class="dropdown-item" asp-action="Index" asp-controller="Order">
+                <a class="dropdown-item" asp-action="Index" asp-controller="Orders">
                     <i class="bi bi-list"></i> Orders
                 </a>
-                @if (User.IsInRole("Admin"))
+                @if(User.IsInRole("Admin"))
                 {
-            <a class="dropdown-item" asp-action="Users" asp-controller="Account">
-                <i class="bi bi-people"></i> Users
-            </a>                }
+                    <a class="dropdown-item" asp-action="Users" asp-controller="Account">
+                        <i class="bi bi-people"></i> Users
+                    </a>
+                }
             </li>
         </ul>
     </div>

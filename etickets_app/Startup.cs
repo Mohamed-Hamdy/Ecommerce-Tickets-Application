@@ -30,7 +30,19 @@ namespace etickets_app
         {
             //DbContext configuration
             services.AddDbContext<AppDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("DefaultConnectionString")));
+            /*
+            services.AddIdentity<ApplicationUser , IdentityRole>(options =>
+            {
+                options.Password.RequiredLength = 10;
+                options.Password.RequiredUniqueChars = 3;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireNonAlphanumeric = false;
 
+            })
+            
+            .AddEntityFrameworkStores<AppDbContext>();
+            */
             // Services Configuration
             services.AddScoped<IActorsService, ActorService>();
             services.AddScoped<IProducersService, ProducersService>();
@@ -41,6 +53,7 @@ namespace etickets_app
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped(sc => ShoppingCart.GetShoppingCart(sc));
 
+            
             //Authorization and Authentication
             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
             services.AddMemoryCache();
@@ -52,7 +65,8 @@ namespace etickets_app
 
             services.AddControllersWithViews();
 
-
+            
+            
             //services.AddSession();
             //services.AddControllersWithViews();
         }
@@ -87,7 +101,7 @@ namespace etickets_app
             });
             // seed Database
             AppDbInitializer.Seed(app);
-            AppDbInitializer.SeedUsersAndRolesAsync(app).Wait();
+            //AppDbInitializer.SeedUsersAndRolesAsync(app).Wait();
         }
     }
 }

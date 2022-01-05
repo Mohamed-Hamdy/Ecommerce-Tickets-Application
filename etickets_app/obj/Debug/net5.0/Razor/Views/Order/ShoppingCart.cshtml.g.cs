@@ -14,20 +14,34 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "D:\etickets_app\etickets_app\Views\_ViewImports.cshtml"
-using etickets_app;
+using eTickets;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 2 "D:\etickets_app\etickets_app\Views\_ViewImports.cshtml"
-using etickets_app.Models;
+using etickets_app;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 3 "D:\etickets_app\etickets_app\Views\_ViewImports.cshtml"
+using eTickets.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "D:\etickets_app\etickets_app\Views\_ViewImports.cshtml"
+using etickets_app.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "D:\etickets_app\etickets_app\Views\_ViewImports.cshtml"
 using Microsoft.AspNetCore.Identity;
 
 #line default
@@ -41,7 +55,7 @@ using etickets_app.Data.ViewModels;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b8e9ec37a6a7fca41f0a4e468203e7437afdd0d7", @"/Views/Order/ShoppingCart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"aafe8df0330080517db4abe6c9ebc6dc7e8ca436", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fc0642e11354da8b738e9b18d24ea83ab2902ad5", @"/Views/_ViewImports.cshtml")]
     public class Views_Order_ShoppingCart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ShoppingCartVM>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("text-danger"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -143,7 +157,7 @@ using etickets_app.Data.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                        <td class=\"align-middle\">\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8e9ec37a6a7fca41f0a4e468203e7437afdd0d78397", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8e9ec37a6a7fca41f0a4e468203e7437afdd0d78708", async() => {
                 WriteLiteral("\r\n                                <i class=\"bi bi-cart-dash\"></i>\r\n                            ");
             }
             );
@@ -177,7 +191,7 @@ using etickets_app.Data.ViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8e9ec37a6a7fca41f0a4e468203e7437afdd0d710939", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8e9ec37a6a7fca41f0a4e468203e7437afdd0d711250", async() => {
                 WriteLiteral("\r\n                                <i class=\"bi bi-cart-plus\"></i>\r\n                            ");
             }
             );
@@ -228,7 +242,7 @@ using etickets_app.Data.ViewModels;
 #nullable disable
             WriteLiteral("\r\n                    </td>\r\n                    <td></td>\r\n                </tr>\r\n            </tfoot>\r\n        </table>\r\n        <div class=\"text-right\">\r\n            <div class=\"btn-group\">\r\n");
             WriteLiteral("                <div id=\"paypal-btn\"></div>\r\n                <span style=\"padding:5px\"></span>\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8e9ec37a6a7fca41f0a4e468203e7437afdd0d714530", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8e9ec37a6a7fca41f0a4e468203e7437afdd0d714841", async() => {
                 WriteLiteral("\r\n                    Add More Items\r\n                ");
             }
             );

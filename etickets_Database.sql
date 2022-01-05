@@ -35,7 +35,7 @@ CREATE TABLE `__efmigrationshistory` (
 
 LOCK TABLES `__efmigrationshistory` WRITE;
 /*!40000 ALTER TABLE `__efmigrationshistory` DISABLE KEYS */;
-INSERT INTO `__efmigrationshistory` VALUES ('20211129123807_Initial','5.0.12'),('20211130181427_Initial','5.0.12'),('20211213231254_Initial','5.0.12'),('20211213235101_ShoppingCartItems_Added','5.0.12'),('20211215230241_Initial','5.0.12'),('20211216140629_Identity_Added','5.0.12'),('20211217102939_Order_And_OrderItem_Added','5.0.12'),('20211229165201_.','5.0.12'),('20211229165306_Identity_Added','5.0.12'),('20211229172713_Identity_Added','5.0.12'),('20211229173234_Identity_Added','5.0.12');
+INSERT INTO `__efmigrationshistory` VALUES ('20211129123807_Initial','5.0.12'),('20211130181427_Initial','5.0.12'),('20211213231254_Initial','5.0.12'),('20211213235101_ShoppingCartItems_Added','5.0.12'),('20211215230241_Initial','5.0.12'),('20211216140629_Identity_Added','5.0.12'),('20211217102939_Order_And_OrderItem_Added','5.0.12'),('20211217104650_ShoppingCartItem_Add','5.0.12'),('20211229165201_.','5.0.12'),('20211229165306_Identity_Added','5.0.12'),('20211229172713_Identity_Added','5.0.12'),('20211229173234_Identity_Added','5.0.12'),('20220105145623_.','5.0.12');
 /*!40000 ALTER TABLE `__efmigrationshistory` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -142,7 +142,7 @@ CREATE TABLE `aspnetroles` (
 
 LOCK TABLES `aspnetroles` WRITE;
 /*!40000 ALTER TABLE `aspnetroles` DISABLE KEYS */;
-INSERT INTO `aspnetroles` VALUES ('38fa7685-72e1-4e49-8e31-36180831996e','User','USER','bbaa92fa-fd87-4e32-97d8-661eed26a8f7'),('65ea204b-7ddc-4ec1-a36a-d6bd991ad51f','Admin','ADMIN','66ad0091-65e2-48b6-9cd5-98bd37ee6949');
+INSERT INTO `aspnetroles` VALUES ('218f125c-7b50-488c-ae96-4a35ce8951fa','SuperUser','SUPERUSER','2f3a64d8-cf2f-47ef-81cd-e5d96f8fd520'),('38fa7685-72e1-4e49-8e31-36180831996e','User','USER','bbaa92fa-fd87-4e32-97d8-661eed26a8f7'),('65ea204b-7ddc-4ec1-a36a-d6bd991ad51f','Admin','ADMIN','66ad0091-65e2-48b6-9cd5-98bd37ee6949');
 /*!40000 ALTER TABLE `aspnetroles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -359,6 +359,36 @@ INSERT INTO `movies` VALUES (1,'Scoob','This is the Scoob movie description',39.
 UNLOCK TABLES;
 
 --
+-- Table structure for table `orderitem`
+--
+
+DROP TABLE IF EXISTS `orderitem`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `orderitem` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `Amount` int NOT NULL,
+  `Price` double NOT NULL,
+  `MovieId` int NOT NULL,
+  `OrderId` int NOT NULL,
+  PRIMARY KEY (`Id`),
+  KEY `IX_OrderItem_MovieId` (`MovieId`),
+  KEY `IX_OrderItem_OrderId` (`OrderId`),
+  CONSTRAINT `FK_OrderItem_Movies_MovieId` FOREIGN KEY (`MovieId`) REFERENCES `movies` (`Id`) ON DELETE CASCADE,
+  CONSTRAINT `FK_OrderItem_Orders_OrderId` FOREIGN KEY (`OrderId`) REFERENCES `orders` (`Id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `orderitem`
+--
+
+LOCK TABLES `orderitem` WRITE;
+/*!40000 ALTER TABLE `orderitem` DISABLE KEYS */;
+/*!40000 ALTER TABLE `orderitem` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `orderitems`
 --
 
@@ -451,11 +481,11 @@ CREATE TABLE `shoppingcartitems` (
   `Id` int NOT NULL AUTO_INCREMENT,
   `MovieId` int DEFAULT NULL,
   `Amount` int NOT NULL,
-  `ShoppingCartId` text,
+  `ShoppingCartId` varchar(150) DEFAULT NULL,
   PRIMARY KEY (`Id`),
   KEY `IX_ShoppingCartItems_MovieId` (`MovieId`),
   CONSTRAINT `FK_ShoppingCartItems_Movies_MovieId` FOREIGN KEY (`MovieId`) REFERENCES `movies` (`Id`) ON DELETE RESTRICT
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -464,7 +494,6 @@ CREATE TABLE `shoppingcartitems` (
 
 LOCK TABLES `shoppingcartitems` WRITE;
 /*!40000 ALTER TABLE `shoppingcartitems` DISABLE KEYS */;
-INSERT INTO `shoppingcartitems` VALUES (1,1,1,'2ee71d80-c648-4809-8d30-3dab3159547e'),(2,2,1,'f43b172f-c552-48a0-b349-adcdc5abbbb3'),(3,3,5,'13b414f1-c622-4b99-bf5b-06fca7f24e01'),(4,2,1,'13b414f1-c622-4b99-bf5b-06fca7f24e01'),(5,2,2,'9aa6c2a4-ff60-457f-ac36-93e9a67f7ebb'),(6,6,3,'88aeb680-5d80-404e-bc79-8327b643d851'),(7,5,3,'d58457cb-1dad-4ebf-ac16-987f37e04330'),(8,4,2,'e97d98e2-1969-412d-a667-9aa605f034cd'),(9,1,1,'bd4841ee-2d80-4c5a-b2e0-1821f376a8d9'),(10,5,1,'5bef2467-a6c7-4eae-9977-a77d5da60dcb'),(11,2,3,'38d2925e-6759-4c81-8127-3f2e7f3b4516'),(12,1,2,'703fd8cf-7098-4dc9-9086-142f4c52ee65'),(13,1,2,'a8ccdc9f-9812-4e57-b560-112ebc368e49'),(24,3,1,'096df04a-7ef1-4a47-8e1a-7ef783b799b9');
 /*!40000 ALTER TABLE `shoppingcartitems` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -477,4 +506,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-12-30  1:41:24
+-- Dump completed on 2022-01-05 17:23:14

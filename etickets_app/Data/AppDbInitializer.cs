@@ -26,7 +26,7 @@ namespace etickets_app.Data
             using (var servicescope = applicationBulider.ApplicationServices.CreateScope())
             {
                 var context = servicescope.ServiceProvider.GetService<AppDbContext>();
-                context.Database.EnsureCreated();
+                context.Database.Migrate();
                 //Cinema
                 if (!context.Cinemas.Any())
                 {
@@ -326,17 +326,21 @@ namespace etickets_app.Data
                 }
             }
         }
+
         public static async Task SeedUsersAndRolesAsync(IApplicationBuilder applicationBulider)
         {
-            using (var serviceScope = applicationBulider.ApplicationServices.CreateScope())
+            using(var serviceScope = applicationBulider.ApplicationServices.CreateScope())
             {
                 var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
-                if (!await roleManager.RoleExistsAsync(UserRoles.Admin))
+                if(! await roleManager.RoleExistsAsync(UserRoles.Admin))
                     await roleManager.CreateAsync(new IdentityRole(UserRoles.Admin));
 
-                if (!await roleManager.RoleExistsAsync(UserRoles.User))
+                if(! await roleManager.RoleExistsAsync(UserRoles.User))
                     await roleManager.CreateAsync(new IdentityRole(UserRoles.User));
+
+                if(! await roleManager.RoleExistsAsync(UserRoles.SuperUser))
+                    await roleManager.CreateAsync(new IdentityRole(UserRoles.SuperUser));
 
                 var userManager = serviceScope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 
@@ -344,7 +348,7 @@ namespace etickets_app.Data
 
                 var adminUser = await userManager.FindByEmailAsync(AdminUserEmail);
 
-                if (adminUser == null)
+                if(adminUser == null)
                 {
                     var newAdminUser = new ApplicationUser()
                     {
@@ -363,7 +367,7 @@ namespace etickets_app.Data
 
                 var appUser = await userManager.FindByEmailAsync(AppUserEmail);
 
-                if (appUser == null)
+                if(appUser == null)
                 {
                     var newAppUser = new ApplicationUser()
                     {
@@ -375,8 +379,13 @@ namespace etickets_app.Data
                     await userManager.CreateAsync(newAppUser, "Coding@12345");
                     await userManager.AddToRoleAsync(newAppUser, UserRoles.User);
                 }
+
+                var superUser = await userManager.Users.Where(u => u.is_superuser == true).FirstAsync();
+
+                if(superUser != null)
+                    if(!await userManager.IsInRoleAsync(superUser, UserRoles.SuperUser))
+                        await userManager.AddToRoleAsync(superUser, UserRoles.SuperUser);
             }
         }
-
     }
 }
